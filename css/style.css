@@ -10,13 +10,30 @@ main{
     margin: 0 auto;
     /* width: 90%; */
     height: auto;
+    border: 1px solid violet;
 }
-nav{
+
+/* ====================
+    header and menu section */
+.logo{
+    font-size: 30px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: #886796;
+}
+.logo h1{
+   text-align: center;
+   color: cornsilk;
+}
+nav{ 
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     height: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 30px;
 }
 .menu{
     list-style: none;
@@ -24,39 +41,123 @@ nav{
 
 }
 .menu li {
-    margin: 10px;
-    font-size: 18px;
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
 }
+
+
+/*============================
+    this is a products section
+  ============================  */
 .products-item{
     display: flex;
+    margin: 40px 40px;
+    height: 380px;
+    background-color: #f5f6fa;
 }
+
+.product-info .product-hading {
+     margin: 40px 0 20px 37px;
+     line-height: 30px;
+     font-size: 28px;
+     font-weight: bold;
+}
+.camera-info{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-info, .product-sample{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 10px;
+    
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin-left: 32px;
+    margin-top: 40px;
+    background-color: #8e44ad;
+    border-radius: 8px;
+    
+}
+button a, .buy-now, i {
+    text-decoration: none;
+    color: cornsilk;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+/* ====================================
+    this is a propular item Collection
+   ===================================== */
+
 .container{
-    margin-right: 10%;
-    margin-top: 100px;
+    /* margin-right: 100px; */
+ 
+    margin-top: 60px;
+    background-color: #f5f6fa;
+    margin-left: 45px;
+    padding: 20px;
 }
-.container h1{
+.container .popular-item-hading{
+    
     text-align: center;
+    color: rgb(123, 113, 143);
+    font-size: 28px;
+     font-weight: bold;
+    
+    
 }
 .popular-item{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 80px;
+    grid-column-gap: 30px;
     grid-row-gap: 80px;
 }
 .popular-photo{
-    background-color: aliceblue;
-    box-shadow: 1px  1px 1px 1px hsla(47, 16%, 78%, 0.411);
-    height: 450px;
+    height: 500px;
     width: 350px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(228, 225, 228);
 }
-.popular-photo, .item-title, img{
-
-    padding: 10px 0 0 15px;
+.popular-photo h1, i{
+    
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 15px;
+    
     
 }
 .popular-photo img{
     width: 300px;
+    padding-top: 20px;
+    margin-left: 15px;
+    
+}
+.item-title i{
+    color: rgb(160, 160, 20);
+
+}
+.item-title .price{
+    color: rgb(94, 95, 110);
+
+}
+.item-title p{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+    
+    
 }
 
 
@@ -106,6 +207,22 @@ nav{
     text-align: center;
     
 }
-.footer h1{
-    padding-top: 70px;
+.footer h1, .copyright {
+    color: blue;
+}
+
+
+.copyright{
+    text-align: center;
+     font-size: bold;
+    display: inline-block;
+   
+}
+.icin i{
+    color: blue;
+}
+.footer h1 {
+    padding-top: 50px;
+    
+
 }
