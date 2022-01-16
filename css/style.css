@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@500&display=swap');
+  
+  
     
     
 
@@ -325,16 +327,29 @@ button a, .buy-now, i {
     
 
 }
-/* @media (max-width: 1280px) {
+
+/* ============================
+=============================== */
+@media (max-width: 645px) {
     
+    main{
+        width: 100%;
+    }
     .prodact-album{
             padding: 0;
             margin: 0;
             width: 350px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr );
+            grid-template-columns: ( 1fr );
             background-color: slateblue;
             
+        }
+        .products-item{
+            display: grid;
+            grid-template-columns: ( 1fr);
+        }
+        .camera-info{
+            width: 300px;
         }
         .prodact-frame{
     
@@ -346,18 +361,118 @@ button a, .buy-now, i {
             border-radius: 10px;
             
         }
+        .popular-item{
+            display: grid;
+            grid-template-columns:repeat(2, 1fr 1fr);
+        }
         
       
-} */
-@media (max-width: 480px) {
+
+} 
+
+/* ==========================
+=========================== */
+
+@media (max-width: 346px) {
     main{
-        /* background-color: slateblue; */
-        border: 1px solid;
+        width: 100%;
+      
     }
     .prodact-album{
         display: grid; 
          grid-template-columns: 1fr; 
-        width: 380px;
+        width: 340px;
+    }
+    .products-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 30px;
+        width: 200pxpx;
+        height: auto;
+        margin-left: 0;
+    }
+    .product-hading{
+        width: 200px;
+    }
+    .camera-info{
+        width: 200px;
+        border: 1px solid red;
+    }
+    .product-info{
+        width: 200px;
+        margin-left: 0;
+        background-color: blue;
+        padding: 0;
+    }
+    .prodact-frame img{
+        width: 200px;
+
+    }
+    .prodact-album{
+       width: 300px;
+       padding: 0;
+       margin: 0;
+       background-color: blanchedalmond;
+    }
+    .prodact-frame{
+    
+        width: 200px;
+        height: 255px;
+        
+        border-radius: 10px;
+        position: relative;
+        margin: 20px;
+        overflow: hidden;
+    }
+    
+    .registration {
+        background-image: none;
+        background-color: blue;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        /* position: absolute; */
+      
+       
+    }
+    .registration form{
+       margin-left: 40px;
+       padding-left: 20px;
+       width: 270px;
+        /* padding-top: 80px;
+       margin-top: 20px;
+       padding-left: 50px;
+       width: 300px; */
+       position: relative;
+       
+    }
+    .registration form input{
+        width: 280px;
+        height: 30px;
+        /* margin-left: 25px;  */
+        margin-top: 0; 
+        position: relative;
+    }
+    
+
+
+    
+}
+
+
+/* ==============================
+============================== */
+@media (max-width: 480px) {
+    main{
+     
+        width: 90%;
+     
+        margin-left: 0;
+    }
+    .prodact-album{
+        display: grid; 
+         grid-template-columns: 1fr; 
+        /* width: 380px; */
     }
     .products-item{
         display: grid;
@@ -368,7 +483,8 @@ button a, .buy-now, i {
         margin-left: 0;
     }
       .product-info{
-          width: 400px;
+          width: 300px;
+          
           margin-left: 0;
       }
 
@@ -399,6 +515,7 @@ button a, .buy-now, i {
        margin-top: 20px;
        padding-left: 50px;
        width: 400px;
+       background-image: none;
        
     }
     .registration form input{
