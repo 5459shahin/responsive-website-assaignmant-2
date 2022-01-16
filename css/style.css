@@ -49,8 +49,63 @@ nav{
     font-weight: bold;
 }
 
+/* ==========================================
+    this is a prodacts photo album
+    ========================================== */
+    
+.album-title{
+    text-align: center;
+    margin: 100px 0px;
+    
+}
 
+.prodact-album{
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(1, 7, 7, 0.863);
+    border-radius: 8px;
+}
 
+.prodact-frame{
+    
+    width: 300px;
+    height: 255px;
+    
+    border-radius: 10px;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+}
+.prodact-pictur img{
+    border-radius: 10px;
+    
+}
+.prodact-name{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 0;
+    text-align: center;
+    margin-top: 30px;
+    
+    background-color: rgba(81, 85, 133, 0.39);
+}
+.prodact-name h2{
+    margin-top: 10px;
+    color: rgb(79, 83, 138);
+    font-weight: bold;
+}
+
+.prodact-frame:hover .prodact-name{
+    display: block;
+    
+}
+.prodact-frame:hover img{
+   transform: scale(1.2);
+   transition: transform 2s ease-in-out;
+}
 /*============================
     this is a products section
   ============================  */
