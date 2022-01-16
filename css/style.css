@@ -7,11 +7,14 @@
 
 }
 main{
-    margin: 0 auto;
-    /* width: 90%; */
+    margin-left: 10%;
+
+    width: 80%;
+    /* border: 1px solid; */
     height: auto;
-    border: 1px solid violet;
+    
 }
+
 
 /* ====================
     header and menu section */
@@ -47,32 +50,53 @@ nav{
 }
 
 
+
 /*============================
     this is a products section
   ============================  */
 .products-item{
     display: flex;
-    margin: 40px 40px;
-    height: 380px;
+    margin: 100px 40px;
+    height: 480px;
     background-color: #f5f6fa;
+    
 }
 
 .product-info .product-hading {
-     margin: 40px 0 20px 37px;
+    
+     margin: 40px  0;
      line-height: 30px;
      font-size: 28px;
      font-weight: bold;
+     
+     
 }
 .camera-info{
     line-height: 25px;
     font-size: 18px;
     font-weight: bold;
+    
 }
+
+
 
 .product-info, .product-sample{
     width: 500px;
     margin-left: 100px;
-    margin-top: 10px;
+   
+    
+}
+.product-info{
+    width: 500px;
+    margin-left: 100px;
+   
+   margin-bottom: 30px;
+    
+}
+.product-sample{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
     
 }
 button{
@@ -82,6 +106,12 @@ button{
     margin-top: 40px;
     background-color: #8e44ad;
     border-radius: 8px;
+    
+}
+button:hover{
+    background-color: rgb(165, 150, 248);
+    border: 1px solid #8e44ad;
+    color: #8e44ad;
     
 }
 button a, .buy-now, i {
@@ -100,12 +130,11 @@ button a, .buy-now, i {
    ===================================== */
 
 .container{
-    /* margin-right: 100px; */
- 
+
     margin-top: 60px;
     background-color: #f5f6fa;
-    margin-left: 45px;
-    padding: 20px;
+    
+    
 }
 .container .popular-item-hading{
     
@@ -115,20 +144,29 @@ button a, .buy-now, i {
      font-weight: bold;
     
     
+    
 }
 .popular-item{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+    grid-column-gap: 40px;
     grid-row-gap: 80px;
+    
+    margin-bottom: 100px;
+    
 }
 .popular-photo{
     height: 500px;
-    width: 350px;
+    width: 300px;
     margin-left: 15px;
     border-radius: 10px;
     background-color: rgb(228, 225, 228);
+    
+}
+.popular-photo .item-title{
+   margin-bottom: 40px;
+    
 }
 .popular-photo h1, i{
     
@@ -139,7 +177,7 @@ button a, .buy-now, i {
     
 }
 .popular-photo img{
-    width: 300px;
+    width: 270px;
     padding-top: 20px;
     margin-left: 15px;
     
@@ -161,50 +199,54 @@ button a, .buy-now, i {
 }
 
 
-.more-information{
-    margin-top: 100px;
-}
-.moore-inf{
-    text-align: center;
-    margin-bottom: 30px;
-}
-.next{
-    padding-top: 180px;
-    font-size: 50px;
-    color: rgb(197, 74, 99);
-}
-.more-popular-products{
-    display: flex;
-    margin-left: 60px;
-}
-.more-pictour{
-    margin: 10px;
-    padding: 20px;
-    /* width: 900px; */
-    height: 400px;
+/*===============================
+ this is a contact section 
+ ================================= */
+
+ .registration{
+     background-image: url(../images/form.png);
+     height: 500px;
+     width: 100%;
+     background-size: 100%;
     
-    display: flex;
-    background-color: aliceblue;
-    box-shadow: 1px  1px 1px 1px hsla(47, 16%, 78%, 0.411);
-}
- .nformation{
-    text-align: justify;
-    margin: 80px 10px 20px;
-    padding-top: 30px;
-    background-color: crimson;
-}
- .nformation, h2, p{
-    text-align: justify;
-    width: 400px;
-    margin-left: 40px;
+ }
+ .registration form{
+     float: right;
+     margin-right: 55px;
+     margin-top: 70px;
+ }
+ .registration form input{
+     height: 40px;
+     width: 400px;
+     font-size: 18px;
+     font-weight: bold;
+     padding-left: 20px;
+     border: 2px solid #8e44ad;
+     border-radius: 5px;
+     margin-top: 15px;
+     /* margin-right: 10px; */
+
+
+ }
+ .registration form input:hover{
+     color: saddlebrown;
+     border: 3px solid #d7b9e6;
+     background-color: rgb(165, 150, 248);
+     border-radius: 6px;
     
-    
-}
+
+ }
+ .form-btn{
+     margin-left: 100px;
+ }
+
 .footer{
+    width: 100%;
     height: 200px;
     background-color: black;
     color: blanchedalmond;
     text-align: center;
+    margin-top: 100px;
     
 }
 .footer h1, .copyright {
@@ -225,4 +267,44 @@ button a, .buy-now, i {
     padding-top: 50px;
     
 
+}
+@media (max-width:1024px) {
+    .footer{
+        width: 1250px;
+        margin-top: 100px;
+    }
+    
+}
+@media (max-width: 412px) {
+    .footer{
+        width: 1220px;
+        margin-top: 80px;
+    }
+
+
+    
+}
+@media  (max-width: 375px) {
+    .logo ul{
+        display: none;
+    }
+    .products-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 300px;
+    }
+   
+    .popular-item{
+       width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+       
+    }
+    .footer{
+        width: 860px;
+    }
+
+
+    
 }
