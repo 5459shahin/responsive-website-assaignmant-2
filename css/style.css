@@ -344,12 +344,31 @@ button a, .buy-now, i {
     .prodact-album{
         display: grid; 
          grid-template-columns: 1fr; 
-        width: 480px;
+        width: 400px;
     }
     .products-item{
         display: grid;
         grid-template-columns: 1fr;
         padding-right: 30px;
+        width: 480px;
+        height: auto;
+    }
+      .product-info{
+          width: 400px;
+          margin-left: 0;
+      }
+
+    .camera-info{
+        width: 300px;
+        font-size: 15px;
+        background-color: slateblue;
+        margin-left: 5px;
+    }
+    .product-info, .product-sample{
+        width: 400px;
+        margin-left: 20px;
+       
+        
     }
     .popular-item{
         display: grid;
@@ -362,14 +381,16 @@ button a, .buy-now, i {
 
     }
     .registration form{
-        padding-top: 40px;
+        padding-top: 80px;
        margin-top: 20px;
-       padding-left: 10px;
+       padding-left: 50px;
+       width: 400px;
        
     }
     .registration form input{
-        width: 300px;
-        margin-left: 15px;
+        width: 280px;
+        height: 30px;
+        margin-left: 25px;
         margin-top: 0;
     }
     form-btn{
