@@ -346,6 +346,28 @@ button a, .buy-now, i {
          grid-template-columns: 1fr; 
         width: 480px;
     }
+    .products-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 30px;
+    }
+    .popular-item{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .registration{
+        background-repeat: no-repeat;
+        back
+
+    }
+    .registration form{
+        
+       margin-top: 5px;
+    }
+    .registration form input{
+        width: 300px;
+        margin-left: 10px;
+    }
 
     
 }
